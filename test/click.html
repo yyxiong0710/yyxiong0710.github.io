@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 20px;
+            height: 20px;
+            background-color: red;
+        }
+        div a{
+            display: block;
+            width:20px;
+            height:20px;
+            background-color: red;
+        }
+    
+    </style>
+</head>
+<body>
+    <script type="text/javascript">
+        var k = document.getElementsByTagName("a");
+        var t = document.getElementsByTagName("div")[0];
+        var cnt = 0;
+
+        // window.onload=function(){
+        //     var b = document.getElementById("changeColoe");
+        //     b.onclick = function(){
+        //         var u = document.getElementsByTagName("div");
+        //         u.style.backgroundColor="#000000";
+        //     }
+        // }
+
+        t.onclick = function(){
+            if(cnt%2 == 0){
+                this.style.background="yellow";
+            }
+            else{
+                this.style.background="blue";
+            }
+            cnt++;
+        };
+
+        t.onclick();
+
+    </script>
+    <div></div>
+</body>
+</html>

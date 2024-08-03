@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>物理</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="phy.css">
+    <style>
+        #phy{
+            background-color: yellow;
+            border-bottom: 1px solid blue;
+        }
+        #phy a{
+            color:black;
+        }
+        #phy:hover{
+            color:black;
+            background-color: yellow;
+            border-bottom: 1px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">
+            <div class="eye left"></div>
+            <div class="eye right"></div>
+            <div class="mouth">
+                <div class="teeth left"></div>
+                <div class="teeth right"></div>
+            </div>
+        </div>
+        <ul type="none">
+            <li id="home"><a href="C:\Users\导\Desktop\新建文件夹\New folder\index.html">home</a></li>
+            <li id="phy"><a href="#">physics</a></li>
+            <li class="math"><a href="C:\Users\导\Desktop\新建文件夹\New folder\math.html">math</a></li>
+            <li class="che"><a href="">chemistry</a></li>
+        </ul>
+    </div>
+    <div class="wrap">
+        <ul type="none">
+            <li class="one">
+                <img src="pic/1.png" alt="">
+                <div class="but">
+                    <input type="radio" name="r1"><p>A</p>
+                    <input type="radio" name="r1"><p>B</p>
+                    <input type="radio" name="r1"><p>C</p>
+                    <input type="radio" name="r1"><p>D</p>
+                </div>
+            </li>
+            <li class="two">
+                <img src="pic/2.png" alt="">
+                <div class="but">
+                    <input type="radio" name="r2"><p>A</p>
+                    <input type="radio" name="r2"><p>B</p>
+                    <input type="radio" name="r2"><p>C</p>
+                    <input type="radio" name="r2"><p>D</p>
+                </div>
+            </li>
+
+            <li class="three">
+                <img src="pic/3.png" alt="">
+                <div class="but">
+                    <input type="radio" name="r3"><p>A</p>
+                    <input type="radio" name="r3"><p>B</p>
+                    <input type="radio" name="r3"><p>C</p>
+                    <input type="radio" name="r3"><p>D</p>
+                </div>
+            </li>
+
+            <li class="four">
+                <img src="pic/4.png" alt="">
+                <div class="but">
+                    <input type="radio" name="r4"><p>A</p>
+                    <input type="radio" name="r4"><p>B</p>
+                    <input type="radio" name="r4"><p>C</p>
+                    <input type="radio" name="r4"><p>D</p>
+                </div>
+            </li>
+
+            <div>
+                <button type="submit" id="submit">提交</button>
+            </div>
+        </ul>
+
+    </div>
+
+    <script>
+
+        var but = document.getElementById("submit");
+        but.addEventListener("click",function(){
+            alert("请确认多一次");
+        })
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+          width: 300px;
+          height: 300px;
+          border: 2px solid #000;
+        }
+      </style>
+</head>
+<body oncontextmenu="return false">
+    <div id='div' onmousedown='divClick(event)'></div>
+  
+    <script>
+      var bgColor = ['00', '11', '22', '33', '44', '55', '66', '77', '88', '99', 'aa', 'bb', 'cc', 'dd', 'ee', 'ff'];
+      var div = document.getElementById('div');
+  
+      function changeBg(index) {
+        div.setAttribute('style', 'background-color: #' + bgColor[index] + '0000')
+        div.setAttribute('data-index', index)
+      }
+      changeBg(0);
+  
+      function divClick(event) {
+        var mouse = event.button
+        var index = div.getAttribute('data-index')
+        if(index == 0 && mouse == 0){
+          index++
+        }else if(index == (bgColor.length - 1) && mouse == 2){
+          index--
+        }else if (index > 0 && index < (bgColor.length - 1)) {
+          if (mouse == 0) {//左键
+            index++
+          } else if (mouse == 2) {//右键
+            index--
+          }
+        }
+        changeBg(index);
+      }
+    </script>
+</html>

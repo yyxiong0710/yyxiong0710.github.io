@@ -1,0 +1,238 @@
+.nav .haha{
+    display: flex;
+    float:left;
+    left: 10px;
+}
+
+.nav .haha .heart{
+    width: 20px;
+    height:20px;
+    background-color: transparent;
+    position: relative;
+    transform: rotate(45deg);
+    animation: jump 2s linear 0s infinite alternate;
+    transition: all 2s;
+}
+
+.nav .haha .heart::after{
+    content: "";
+    width: 20px;
+    height: 10px;
+    position:absolute;
+    left: 0;
+    top: -9px;
+    background-color: transparent;
+    border-radius: 10px 10px 0 0;
+    border-color: transparent;
+    transition: all 2s;
+}
+
+.nav .haha .heart::before{
+    content: "";
+    width: 10px;
+    height: 20px;
+    position:absolute;
+    left: -9px;
+    top: 0;
+    background-color: transparent;
+    border-radius: 10px 0 0 10px;
+    border-color: transparent;
+    transition: all 2s;
+}
+
+.nav .haha:hover .heart{
+    background-color: red;
+}
+
+.nav .haha:hover .heart::after{
+    border-color: red;
+    background-color: red;
+}
+
+.nav .haha:hover .heart::before{
+    border-color: red;
+    background-color: red;
+}
+
+@keyframes jump {
+    0%{
+        transform: rotate(45deg) scale(0.5);
+    }
+    100%{
+        transform: rotate(45deg) scale(1.2);
+    }
+}
+
+#main{
+    width: 100%;
+    height:3000px;
+    background-image: url(./pic/bk.jpg);
+    background-repeat: repeat-x;
+    background-size: contain;
+}
+
+#main h2{
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(240, 248, 255,0.8);
+    color: red;
+    border-radius: 20px;
+    text-decoration: solid;
+    text-align: center;
+    position: relative;
+    top: 20px;
+}
+
+#main .content1{
+    width: 1200px;
+    height: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(240, 248, 255,0.8);
+    border-radius: 20px;
+    text-decoration: solid;
+    position: relative;
+    top: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#main .content1 .bu{
+    width:250px;
+    height:100px;
+    background-color: rgb(0, 0, 255,0.8);
+    border-radius: 20px;
+    display:flex;
+    align-items: center;
+    position:relative;
+
+}
+
+#main .content1 .bu p{
+    color: azure;
+    font-size: 20px;
+    font-weight: 100;
+    margin:0 auto;
+}
+
+#main .content1 .bu div{
+    width: 8px;
+    height: 15px;
+    position:absolute;
+    right: 20px;
+    top:10px;
+    background-color: rgb(240, 248, 255,0.8);
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+}
+
+#main .content1 .bu .l{
+    height: 40px;
+    top: 35px;
+    border-radius: 5px;
+}
+
+#main .content1 .bu .up{
+    width: 80%;
+    height:3px;
+    background-color: blue;
+    position: absolute;
+    margin: 0 auto;
+    box-shadow: 0 0 50px rgb(0, 0, 0);
+    top:10%;
+}
+
+
+#main .content1 .bu .down{
+    width: 80%;
+    height:2px;
+    background-color: blue;
+    position: absolute;
+    margin: 0 auto;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 1);
+    top:90%;
+}
+
+#main .content1 .bu:hover{
+    cursor: pointer;
+    transform:scale(1.2);
+    box-shadow: 5px 5px 8px rgba(32, 32, 32, 0.6);
+}
+
+#main .door{
+    width: 1300px;
+    height: 600px;
+    background-color: rgb(240, 248, 255,0.9);
+    position: absolute;
+    top: 110px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 20px;
+    display:flex;
+    justify-content: space-around;
+    z-index: 10;
+}
+
+#main .display{
+    display: none;
+}
+
+#main .door .sc{
+    position:relative;
+    left: 10px;
+    top:10px;
+    height: 70%;
+}
+
+#main .door .sc2{
+    display: block;
+    width:50px;
+    cursor: pointer;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+
+#main .door p{
+    width: 700px;
+    position: relative;
+    top: 10px;
+    font-size: 20px;
+}
+
+.form{
+    width: 100%;
+    height: 300px;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+h4{
+    position: absolute;
+    margin: 0 auto;
+    top: 0;
+    text-decoration:underline;
+}
+
+footer{
+    width: 100%;
+    height: 300px;
+    background-color: black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    margin: 0 auto;
+    color: aliceblue;
+}
+
+
+
